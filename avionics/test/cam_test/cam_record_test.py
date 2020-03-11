@@ -121,10 +121,7 @@ while not(interrupt_bool):
 		#Reset global interrupt flag
 		threading.Timer(record_chunk, store_interrupt_func).start()
 		store_and_send_bool = False
-
-		#Send bytes-like date over the Network (UDP)
-		send_network(stream.getvalue())
-		
+	
 		#Store bytes-like data to file 
 		camera_file_handle.write(stream.getvalue())
 		
