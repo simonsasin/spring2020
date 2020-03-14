@@ -15,9 +15,17 @@ serial_port = "/dev/ttyAMA0"  # UART serial pins PL011
 #          In:
 #  Out/Modify:
 # -----------------------------------------------------------------------------
-def setup_serial():
-    piSerial = serial.Serial(serial_port, baudrate)
+ser = serial.Serial(serial_port, baudrate)
 
+
+i=0
+while True:
+    print(i)
+
+    ser.write(b"hi from pi")
+    read_ser=ser.readline()
+    print(read_ser)
+    i=i+1
 ######################################MAIN#####################################
 
 
