@@ -6,7 +6,7 @@
 import serial
 
 baudrate = 115200  # set baudrate to 115200 bits/sec
-serial_port = "/dev/ttyAMA0"  # UART serial pins PL011
+serial_port = "/dev/ttyS0"  # UART serial pins PL011
 
 
 ###################################FUNCTIONS!##################################
