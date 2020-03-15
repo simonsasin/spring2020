@@ -1,0 +1,5 @@
+link to sensor page:
+https://www.sparkfun.com/products/14414
+
+link to TinyGPSPlus github:
+https://github.com/mikalhart/TinyGPSPlus
